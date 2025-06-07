@@ -8,11 +8,10 @@
     tools:context=".MainActivity">
 
     <TextView
-
-        android:id="@+id/add_view"
+        android:id="@+id/mul_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Addition answer"
+        android:text="multiplication answer"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -20,14 +19,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button_sum"
+        android:id="@+id/button_mul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUM"
+        android:text="multiplication"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/add_view" />
+        app:layout_constraintTop_toBottomOf="@+id/mul_view" />
 
     <EditText
         android:id="@+id/num_01"
@@ -47,21 +46,12 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal"
-        app:layout_constraintBottom_toTopOf="@+id/add_view"
+        app:layout_constraintBottom_toTopOf="@+id/mul_view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/num_01" />
 
-    <Button
-        android:id="@+id/go_mul"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Go to MUL"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_sum" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
