@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 public class MainActivity extends AppCompatActivity {
     TextView answer;
     EditText num1,num2;
-    Button sum, gomul;
+    Button sum, gomull;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         num1 = (EditText) findViewById(R.id.num_01);
         num2 = (EditText) findViewById(R.id.num_02);
         sum = (Button) findViewById(R.id.button_sum);
-        gomul = (Button) findViewById(R.id.go_mul);
+        gomull = (Button) findViewById(R.id.go_mul);
 
         sum.setOnClickListener(new View.OnClickListener() {
             @Override
